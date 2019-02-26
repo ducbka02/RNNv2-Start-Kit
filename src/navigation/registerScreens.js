@@ -10,7 +10,7 @@ import {
   Tab1Screen,
   Tab2Screen
 } from 'src/screens';
-import { Provider } from 'src/redux';
+import { Provider } from 'src/config';
 
 import {
   WELCOME_SCREEN,

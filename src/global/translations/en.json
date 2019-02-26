@@ -1,0 +1,660 @@
+{
+  "tabbar": {
+    "nations": "NATIONS",
+    "chat": "CHAT",
+    "dashboard": "DASHBOARD",
+    "wallet": "WALLET",
+    "profile": "PROFILE"
+  },
+  "activityLog": {
+    "nation": {
+      "join": {
+        "succeed": "Joined nation: {{nationName}}",
+        "failed": "Failed to join: {{nationName}}"
+      },
+      "create": {
+        "succeed": "Created Nation {{nationName}}",
+        "failed": "Failed to create: {{nationName}}"
+      },
+      "leave": {
+        "succeed": "Left nation: {{nationName}}",
+        "failed": "Failed to leave: {{nationName}}"
+      }
+    }
+  },
+  "common": {
+    "send": "Send",
+    "receive": "Receive",
+    "transactions": "Transactions",
+    "ok": "OK",
+    "previous": "Previous",
+    "next": "Next",
+    "cancel": "Cancel",
+    "begin": "Begin",
+    "done": "Done",
+    "edit": "Edit",
+    "from": "From",
+    "to": "To",
+    "address": "Address",
+    "amount": "Amount",
+    "wallet": "Wallet",
+    "map": "Map",
+    "join": "Join",
+    "leave": "Leave",
+    "new": "New",
+    "optional": "Optional",
+    "available": "available",
+    "options": "Options",
+    "fees": "Fees",
+    "chat": "Chat",
+    "nations": "Nations",
+    "governmentalStructure": "Governmental Structure",
+    "updating": "Updating",
+    "updateFailed": "Update failed",
+    "ethereum": "Ethereum",
+    "bitnationPat": "XPAT",
+    "continue": "Continue",
+    "location": "Location",
+    "accounts": "Accounts",
+    "balance": "Balance"
+  },
+  "enums": {
+    "nation": {
+      "locationType": {
+        "virtual": "Virtual nation",
+        "geographical": "Geographical nation"
+      },
+      "usageAllowance": {
+        "may": "may",
+        "mayNot": "may not"
+      },
+      "profit": {
+        "for": "for-profit",
+        "non": "non-profit"
+      },
+      "legalCode": {
+        "no": "No legal code",
+        "transSupra": "Transnational/Supranational Law",
+        "multiple": "Multiple Legal Codes",
+        "unidroit": "UNIDROIT Principles",
+        "computer": "Computer Code",
+        "common": "Common Law",
+        "civil": "Civil Law"
+      },
+      "services": {
+        "legal": "Legal Services",
+        "insurance": "Insurance Services",
+        "social": "Social Services",
+        "diplomatic": "Diplomatic Services",
+        "physical": "Physical Services"
+      },
+      "governmentType": {
+        "other": "Other Type of Government",
+        "holocracy": "Holocracy",
+        "democracy": "Democracy",
+        "autocracy": "Autocracy",
+        "theocracy": "Theocracy",
+        "meritocracy": "Meritocracy"
+      },
+      "lawEnforcementMechanism": {
+        "no": "No Law Enforcement",
+        "idReputation": "ID & Reputation Law Enforcement",
+        "privateOrCooperativeSecurity": "Private or Cooperative Security",
+        "nationState": "Nation State Law Enforcement",
+        "international": "International Law Enforcement"
+      },
+      "status": {
+        "draft": "Draft",
+        "NATION_JOIN": {
+          "200": "Joining",
+          "300": "",
+          "400": "Banned"
+        },
+        "NATION_CREATE": {
+          "200": "Pending",
+          "300": "",
+          "400": "Rejected"
+        },
+        "NATION_LEAVE": {
+          "200": "Leaving",
+          "300": "",
+          "400": "Leaving rejected"
+        }
+      }
+    },
+    "onOff": {
+      "on": "on",
+      "off": "off"
+    }
+  },
+  "alerts": {
+    "abortKeyCreateProcess": {
+      "title": "Delete Private Key",
+      "subtitle": "Are you sure that you want to stop creating this private key?",
+      "confirm": "Delete Key",
+      "cancel": "$t(common.cancel)"
+    },
+    "privateKeyGroupCompleted": {
+      "title": "Group {{number}} finished!",
+      "subtitle": "Good work! Now, write down next group of {{KEY_PAGE_LENGTH}} words.",
+      "confirm": "$t(common.ok)"
+    },
+    "incorrectKeyEntered": {
+      "title": "Incorrect: Check all the words.",
+      "subtitle": "",
+      "confirm": "$t(common.ok)"
+    },
+    "passwordRecoveryFailed": {
+      "title": "Entered private key does not match the account.",
+      "subtitle": "",
+      "confirm": "$t(common.ok)"
+    },
+    "walletRequired": {
+      "title": "No wallet",
+      "subtitle": "You need to setup a wallet first",
+      "confirm": "$t(common.ok)",
+      "cancel": "$t(common.cancel)"
+    },
+    "resetForm": {
+      "title": "Reset",
+      "subtitle": "Reset this form to default values?",
+      "confirm": "$t(common.ok)",
+      "cancel": "$t(common.cancel)"
+    },
+    "deleteForm": {
+      "title": "Delete Draft",
+      "subtitle": "Delete this draft nation?",
+      "delete": "Delete",
+      "cancel": "$t(common.cancel)"
+    },
+    "saveForm": {
+      "title": "Save Draft",
+      "subtitle": "This draft nation has been saved to your device.",
+      "continue": "$t(common.continue)",
+      "close": "Close"
+    },
+    "submitForm": {
+      "title": "Submit Nation",
+      "subtitle": "Submit this nation to the blockchain?",
+      "confirm": "$t(common.continue)",
+      "cancel": "$t(common.cancel)"
+    },
+    "saveFormOnCancel": {
+      "title": "Save Draft",
+      "subtitle": "Do you want to save this nations as a draft on your device?",
+      "save": "Save",
+      "cancel": "$t(common.cancel)"
+    },
+    "confirmDelete": {
+      "title": "Confirm Delete",
+      "subtitle": "Are you sure you want to delete the document?",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "error": {
+      "title": "Error",
+      "confirm": "$t(common.ok)"
+    },
+    "nationsDisabled": {
+      "title": "This function is disabled in this release. It will be re-enabled on March 3.",
+      "confirm": "$t(common.ok)"
+    },
+    "passcodeVerificationFailed": {
+      "title": "Passcode mismatch",
+      "subtitle": "Please enter passcode carefully again.",
+      "tryAgain": "Try again",
+      "startOver": "Start over"
+    },
+    "changingPasscodeType": {
+      "title": "Change passcode?",
+      "subtitle": "Changing the passcode type requires you to change your passcode",
+      "confirm": "$t(common.ok)",
+      "cancel": "$t(common.cancel)"
+    },
+    "successTransaction": {
+      "title": "Success",
+      "subtitle": "Your transaction has been successfully sent",
+      "confirm": "$t(common.ok)"
+    },
+    "successResetPassword": {
+      "title": "Success",
+      "subtitle": "Your password has been successfully changed",
+      "confirm": "$t(common.ok)"
+    }
+  },
+  "screens": {
+    "intro": {
+      "freeSpeech": {
+        "title": "Free Speech",
+        "text": "She uses Bitnation to speak privately with clients. He uses Bitnation to speak privately with victims."
+      },
+      "refugeeEmergencyResponse": {
+        "title": "Refugee      Emergency     Response",
+        "text": "He can show his documents from home. She can get a fair wage for her work."
+      },
+      "education": {
+        "title": "Bitnation        Education        Network",
+        "text": "She can get her high school diploma. He can study the languages he needs."
+      },
+      "nations": {
+        "title": "Borderless       Decentralized      Nations",
+        "text": "They can form a nation to get a fair deal, enforce contracts, and share working knowledge."
+      }
+    },
+    "accounts": {
+      "title": "Accounts",
+      "introduction": "Create a new account or restore an account you have backed up.",
+      "newAccount": "New Account",
+      "restoreAccount": "Restore Account",
+      "warningTitle": "Where's My Money?",
+      "warningText": "This release is not compatible with prior releases of the Pangea app. Tap this button to learn how to recover the Ethereum in your wallet.",
+      "checkRelease": "Open Instructions Website",
+      "create": {
+        "prev": "Previous",
+        "next": "Next",
+        "title": "Create Account",
+        "securityTitle": "Security Settings",
+        "numericCode": "Numeric Passcode (less secure)",
+        "codeLength": "Passcode Length",
+        "lockAccount": "Lock Account when app closes",
+        "requireCode": "Require Passcode for",
+        "payment": "Payments & Editing",
+        "editAccount": "Edit Account",
+        "developerTitle": "Developer Settings",
+        "testingAccount": "Testing Account",
+        "useMainNetwork": "Using main Ethereum network",
+        "useRinkebyNetwork": "Using Rinkeby testing network",
+        "mainNetwork": "MAIN ETHEREUM NETWORK",
+        "rinkebyNetwork": "RINKEBY TESTING NETWORK",
+        "detailLogging": "Detailed Logging",
+        "debuggingTools": "Debugging Tools",
+        "identityTitle": "Create Identity",
+        "name": "Name",
+        "location": "Location",
+        "readyUse": "Your account is ready to use.",
+        "walletEmpty": "Your account is ready, but your wallet is empty. Please add ETH to your wallet so you can do stuff.",
+        "openDashboard": "Open Dashboard",
+        "openWallet": "Open ETH Wallet"
+      },
+      "restore": {
+        "title": "Restore Account",
+        "source": "Restore your account from:",
+        "clipboard": "Restore from Clipboard",
+        "file": "Restore from File",
+        "cloud": "Restore from Cloud",
+        "emptyWalletStatement": "Your wallet is empty or low. Please add ETH to your wallet so you can do stuff.",
+        "sendETH": "Send ETH to address"
+      }
+    },
+    "dashboard": {
+      "tabTitle": "$t(tabbar.dashboard)",
+      "activityPanel": {
+        "title": "Activity"
+      },
+      "walletPanel": {
+        "title": "$t(common.wallet)",
+        "empty": "Create a wallet to use Pangea."
+      },
+      "nationsPanel": {
+        "title": "$t(common.nations)",
+        "nationsCount": {
+          "prefix": "",
+          "main": "{{count}}",
+          "suffix": " in Pangea"
+        },
+        "newNations": "Newest Nations"
+      },
+      "warningPanel": {
+        "title": "Notice",
+        "body": "Smart contracts will be upgraded in the near future.",
+        "button": "More"
+      },
+      "confirmKeyPanel": {
+        "title": "Important",
+        "body": "Write down your private key to not lose your account.",
+        "button": "Start"
+      }
+    },
+    "chat": {
+      "title": "$t(common.chat)",
+      "tabTitle": "$t(tabbar.chat)",
+      "allChats": "All Chats",
+      "myChats": "My Chats",
+      "keyFromClipboard": "Use Identity Key on clipboard",
+      "keyFromLibrary": "Get Identity Key from library",
+      "keyFromCamera": "Scan Identity Key with camera",
+      "dappChat": "New Chat with DApp",
+      "cancel": "$t(common.cancel)",
+      "sendInvite": "Send Invite",
+      "invalidKey": "Invalid or Missing Key",
+      "inviteSent": "Invite Sent",
+      "dAppMessagePreview": "DApp message...",
+      "chatNameAlert": {
+        "title": "Enter chat name:",
+        "confirm": "$t(common.ok)",
+        "cancel": "$t(common.cancel)"
+      },
+      "menu": {
+        "filterChatList": "Filter Chat List",
+        "markAllRead": "Mark all as read",
+        "shareIdentityKey": "Share my Identity Key",
+        "managerChatSections": "Manager Chat Sections",
+        "restoreChat": "Restore Chat",
+        "settings": "Settings"
+      }
+    },
+    "contactsPicker": {
+      "title": "Manage Chat Group",
+      "newContactFromClipboard": "New Contact from Clipboard",
+      "doneButton": "$t(common.done)",
+      "addContactError": "Error adding contact, please try again later.",
+      "label": "$t(common.to):"
+    },
+    "migration": {
+      "title": "Migration",
+      "migrateData": "Please wait, we are migrating your data"
+    },
+    "nations": {
+      "toolbar": {
+        "chat": "CHAT",
+        "map": "MAP",
+        "join": "JOIN",
+        "submit": "SUBMIT",
+        "delete": "DELETE",
+        "reset": "RESET",
+        "save": "SAVE",
+        "leave": "LEAVE"
+      },
+      "title": "$t(common.nations)",
+      "tabTitle": "$t(tabbar.nations)",
+      "allNations": "All Nations",
+      "myNations": "My Nations"
+    },
+    "nationDetails": {
+      "title": "Nation",
+      "aboutInfo": "About {{name}}",
+      "description": "Description",
+      "locationInfo": "{{name}} is a {{locationType}}",
+      "legalSystemInfo": "{{name}} uses {{code}} as its legal system.",
+      "lawEnforcementInfo": "The laws are enforced with {{lawEnforcementMechanism}}.",
+      "governmentInfo": "The government is a {{decisionMakingProcess}}.",
+      "funFacts": "Fun Facts",
+      "diplomaticRecognitionInfo": "{{name}} is seeking diplomatic recognition from Earth governments as a sovereign entity.",
+      "serviceUsageInfo": "Non-citizens {{allowance}} use national services.",
+      "profitInfo": "The nation is managed as a {{profit}} entity.",
+      "ethereumAddress": "Ethereum Address:",
+      "status": "Status:",
+      "citizen": "You are citizen of",
+      "statusDescription": {
+        "NATION_CREATE": {
+          "200": "Submission in progress...",
+          "300": "Submitted to blockchain.",
+          "400": "Submission failed."
+        },
+        "NATION_JOIN": {
+          "200": "Join nation in progress...",
+          "300": "Join nation succeed.",
+          "400": "Join nation failed"
+        },
+        "NATION_LEAVE": {
+          "200": "Leave nation in progress...",
+          "300": "Leave nation succeed.",
+          "400": "Leave nation failed"
+        }
+      }
+    },
+    "createNation": {
+      "title": "Create A Nation",
+      "introduction": "Reclaim your sovereignty by creating your own decentralized borderless voluntary nation (DBVN).",
+      "prompt": {
+        "name": "Nation name",
+        "description": "Short description",
+        "location": "Nation location type...",
+        "represents": "Nation represents an existing Earth country",
+        "legalCode": "Legal Code...",
+        "lawEnforcementMechanism": "Law Enforcement Mechanism...",
+        "typeOfGovernment": "Type of Government...",
+        "servicesOffered": "Services Offered...",
+        "diplomaticRecognition": "Seeking diplomatic recognition as a sovereign entity.",
+        "servicesUsage": "Non-citizens may use governance services.",
+        "profit": "For-profit nation."
+      },
+      "locationTypeHint": "Virtual nations exist only in Pangea. Geographic nations are on Earth.",
+      "cancelButton": "$t(common.cancel)",
+      "doneButton": "$t(common.done)"
+    },
+    "wallet": {
+      "title": "$t(common.wallet)",
+      "tabTitle": "$t(tabbar.wallet)",
+      "empty": {
+        "createWallet": "Create Wallet",
+        "restoreWallet": "Restore Wallet",
+        "createWalletPanel": {
+          "title": "$t(screens.wallet.empty.createWallet)",
+          "text": "You need an Ethereum wallet to make payments, to create nations, and to use other useful services.",
+          "button": "$t(screens.wallet.empty.createWallet)"
+        },
+        "restoreWalletPanel": {
+          "title": "$t(screens.wallet.empty.restoreWallet)",
+          "text": "You can restore your wallet if you lose or change your phone. You will need your private key to restore your wallet.",
+          "button": "$t(screens.wallet.empty.restoreWallet)"
+        }
+      }
+    },
+    "profile": {
+      "title": "Profile",
+      "tabTitle": "$t(tabbar.profile)",
+      "shareKey": "Share Identity Key",
+      "empty": {
+        "createProfilePanel": {
+          "title": "Become a World Citizen",
+          "text": "Bitnation is a decentralized, open-source movement powered by blockchain technology. Bitnation offers a peer-to-peer voluntary governance system to compete with the prevailing top-down, one-size-fits-all, geographical apartheid Nation State model wherein your quality of life is arbitrarily defined by where you were born.",
+          "button": "Create a User Profile"
+        }
+      },
+      "editButton": "$t(common.edit)",
+      "edit": {
+        "cancelButton": "$t(common.cancel)",
+        "doneButton": "$t(common.done)",
+        "personalInformation": "Personal Information",
+        "name": "Name",
+        "location": "Location ($t(common.optional))",
+        "editPhoto": "$t(common.edit)",
+        "editPhotoActionSheet": {
+          "title": "Edit your profile picture.",
+          "photoLibrary": "Photo Library",
+          "takePhoto": "Take Photo",
+          "cancel": "$t(common.cancel)"
+        }
+      }
+    },
+    "confirmKey": {
+      "title": "Confirm Private Key",
+      "instructions": {
+        "beforeGrid": [
+          "We will show you a group of {{KEY_LENGTH}} words that is the private key of your account."
+        ],
+        "afterGrid": [
+          "Write the words on paper, in order. Store the paper in very safe place. If your device is lost, stolen, broken, or upgraded, you must have this key to restore your account."
+        ]
+      },
+      "process": {
+        "instructions": [
+          "Write each row of words on the piece of paper. Press “Next” when you have written the row."
+        ],
+        "nextButton": "$t(common.next)",
+        "previousButton": "$t(common.previous)"
+      },
+      "startButton": "$t(common.begin)"
+    },
+    "verifyKey": {
+      "title": "Verify Private Key",
+      "instructions": [
+        "Now that you have written down your private key, we will ask you to verify it.",
+        "You will type the {{KEY_LENGTH}} words of your private key into the app, and we will check that your written private key is correct.",
+        "Your private key protects everything in Bitnation, so be sure to put your paper with your private key in a safe place."
+      ],
+      "success": {
+        "instructions": [
+          "Congratulations! You correctly entered your private key.",
+          "Now, put your paper with your private key in a safe place."
+        ],
+        "doneButton": "$t(common.done)"
+      },
+      "startButton": "$t(common.begin)"
+    },
+    "enterPrivateKey": {
+      "instructions": [
+        "Enter in the correct order the {{KEY_LENGTH}} words that you wrote down as your paper key. Tap a box to begin."
+      ],
+      "nextButton": "$t(common.next)",
+      "previousButton": "$t(common.previous)",
+      "doneButton": "$t(common.done)"
+    },
+    "viewPrivateKey": {
+      "title": "Private key",
+      "instructions": [],
+      "nextButton": "$t(common.next)",
+      "previousButton": "$t(common.previous)"
+    },
+    "restoreKey": {
+      "title": "Restore account"
+    },
+    "sendMoney": {
+      "title": "Send money",
+      "enterAddress": "Enter ETH address",
+      "available": "available"
+    },
+    "receiveMoney": {
+      "title": "Receive Money",
+      "shareAddressPanel": {
+        "title": "Copy Address",
+        "text": "You can copy your wallet address and send any way you choose, e.g. SMS or email. Do not try to type your address by hand!",
+        "button": "Share Wallet Address"
+      }
+    },
+    "dAppQRCodeScanner": {
+      "devHost": {
+        "title": "Connect to DApp host",
+        "instruction": "Scan QR code to connect to PC"
+      },
+      "logger": {
+        "title": "Connect to debug logger",
+        "instruction": "Scan QR code to connect to PC"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "tabTitle": "SETTINGS",
+      "identity": "Identity",
+      "security": "Security",
+      "viewPrivateKey": "Private Key",
+      "confirmPrivateKey": "Private Key (confirmation required)",
+      "switchAccounts": "Switch accounts",
+      "connectToDAppHost": "Connect to DApp host",
+      "connectToDAppLogger": "Connect debug logger",
+      "documents": "Documents",
+      "sections": {
+        "account": "Account",
+        "dApps": "DApp development",
+        "notary": "Notary"
+      }
+    },
+    "securitySettings": {
+      "title": "Security settings",
+      "useNumericPasscode": "Numeric Passcode (less secure)",
+      "passcodeLength": "Passcode Length",
+      "changePasscode": "Change Passcode"
+    },
+    "pinCode": {
+      "enterInstruction": "Enter PIN code:",
+      "createInstruction": "Enter new PIN code:",
+      "verifyInstruction": "Enter PIN code again:"
+    },
+    "password": {
+      "enterInstruction": "Enter password:",
+      "createInstruction": "Enter new password:",
+      "verifyInstruction": "Enter password again:",
+      "forgetInstruction": "Forgot Password?"
+    },
+    "confirmTransaction": {
+      "title": "Confirm Transaction",
+      "gasPrice": "What gas price would you like to set?",
+      "gasLimit": "Gas Limit",
+      "gasEstimate": "Est. Transaction fee",
+      "confirmButton": "Confirm",
+      "gasPriceTitle": "Gas Price: {{gasPrice}}",
+      "slow": "Slow",
+      "quick": "Quick",
+      "fast": "Fast",
+      "fastest": "Fastest",
+      "to": "To Address:",
+      "from": "From Address:",
+      "amount": "Amount:",
+      "total": "Total:",
+      "processor": "Processor",
+      "gwei": "Gwei",
+      "eth": "ETH"
+    },
+    "documentsList": {
+      "title": "Documents",
+      "actionSheetTitle": "Select document to store"
+    },
+    "documentView": {
+      "submitDocument": "Submit Document",
+      "actions": {
+        "edit": "Edit metadata",
+        "delete": "Delete document"
+      },
+      "registered": "Registered",
+      "txHash": "Tx Hash",
+      "signature": "Signature",
+      "docHash": "Document Hash",
+      "status": "Status"
+    },
+    "documentModify": {
+      "title": "New document",
+      "fields": {
+        "title": "Title",
+        "description": "Description"
+      },
+      "placeholder": {
+        "title": "Enter title",
+        "description": "Enter description"
+      },
+      "save": "Save document"
+    }
+  },
+  "testingMode": {
+    "changeActiveAlert": {
+      "title": "You have turned {{onOff}} testing mode"
+    },
+    "removeWallets": "Remove wallets"
+  },
+  "error": {
+    "noConnection": "Please check your internet connection.",
+    "insufficientFunds": "Insufficient funds. Please check your wallet.",
+    "noCamera": "Camera Error",
+    "invalidPinCode": "PIN code is invalid. Please try again.",
+    "invalidPassword": "Password is invalid. Please try again.",
+    "loginFailed": "Unable to login. Please report this issue.",
+    "passcodeCreationFailed": "Unable to create passcode. Please report this issue.",
+    "accountCreationFailed": "Unable to create account. Please report this issue.",
+    "generalError": "Unable to finish operation. Please report this issue."
+  },
+  "bots": {
+    "freudbot": {
+      "initial1": "Hi, I am Dr. FreudBot, your resident therapist. What is bothering you?",
+      "initial2": "Herr Professor Doktor FreudBot here, your therapy bot. What has been troubling you?",
+      "initial3": "I am the Pangea therapy bot, Dr. FreudBot, ready to help. I am not a real therapist, I just play one in this app.",
+      "initial4": "I'm here, Dr. FreudBot. Talk to me.",
+      "initial5": "Talk to me! I am Dr. FreudBot. Tell me about your mother.",
+      "initial6": "Hallo, Dr. FreudBot here. I am not a real Freudian. I am not real. Are you? Are you sure?"
+    }
+  },
+  "dApps": {
+    "unknownDAppMessage": "This message was sent from DApp that is not installed on your device. It can not be rendered.",
+    "failedDAppMessageRender": "{{dAppName}} DApp failed to render this message. It may be due to an issue in the DApp or using of an old version.",
+    "failedDAppModalRender": "{{dAppName}} DApp failed to render the modal. It may be due to an issue in the DApp or using of an old version."
+  }
+}

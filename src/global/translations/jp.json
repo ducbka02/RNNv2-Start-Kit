@@ -1,0 +1,36 @@
+{
+    "common": {
+        "ok": "はい",
+        "cancel": "いいえ",
+        "confirm": "確認"
+    },
+    "alerts": {
+        "confirm": {
+            "title": "$t(common.confirm)",
+            "subtitle": "メールアドレスまたはパスワードを確認して下さい。",
+            "confirm": "$t(common.ok)"
+        },
+        "information": {
+            "title": "$t(common.confirm)",
+            "subtitle": "メールアドレスまたはパスワードを確認して下さい。",
+            "confirm": "$t(common.ok)"
+        },
+        "loginFail": {
+            "title": "失敗します",
+            "subtitle": "メールアドレスまたはパスワードを確認して下さい。",
+            "confirm": "$t(common.ok)"
+        },
+        "logOut": {
+            "title": "$t(common.confirm)",
+            "subtitle": "ログアウトします。よろしいでしょうか？",
+            "confirm": "$t(common.ok)",
+            "cancel": "$t(common.cancel)"
+        },
+        "changeProfile": {
+            "title": "$t(common.confirm)",
+            "subtitle": "アカウント情報を更新します。よろしいでしょうか。?",
+            "confirm": "$t(common.ok)",
+            "cancel": "$t(common.cancel)"
+        }
+    }
+}

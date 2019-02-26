@@ -12,7 +12,6 @@ import { Navigation } from 'react-native-navigation';
 import { get } from 'lodash';
 
 import { pushTutorialScreen } from 'src/navigation';
-import { connectData } from 'src/redux';
 
 const styles = StyleSheet.create({
   flex: {
@@ -62,4 +61,4 @@ Tab2Screen.propTypes = {
   data: PropTypes.shape({}).isRequired
 };
 
-export default connectData()(Tab2Screen);
+export default Tab2Screen;

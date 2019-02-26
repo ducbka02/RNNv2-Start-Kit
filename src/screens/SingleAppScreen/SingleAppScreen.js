@@ -13,7 +13,6 @@ import { get } from 'lodash';
 import Config from 'react-native-config';
 
 import { pushTutorialScreen } from 'src/navigation';
-import { connectData } from 'src/redux';
 
 const styles = StyleSheet.create({
   flex: {
@@ -63,4 +62,4 @@ SingleAppScreen.propTypes = {
   data: PropTypes.shape({}).isRequired
 };
 
-export default connectData()(SingleAppScreen);
+export default SingleAppScreen;
