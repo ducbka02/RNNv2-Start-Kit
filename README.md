@@ -33,7 +33,7 @@ Before start, make sure you installed:
 
 Clone the repo and install packages.
 ```shell
-$ git clone https://github.com/atoami/react-native-navigation-redux-starter-kit ReactNativeBoilerplate
+$ git clone https://github.com/ducbka02/RNNv2-Start-Kit ReactNativeBoilerplate
 $ cd ReactNativeBoilerplate
 $ yarn
 ```
